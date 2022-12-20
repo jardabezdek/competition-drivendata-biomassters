@@ -12,7 +12,6 @@ RUN apt-get install -y build-essential \
 
 COPY requirements.txt .
 
-ENV GDAL_VERSION=3.1.0
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
